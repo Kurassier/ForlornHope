@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BattleFieldManager : MonoBehaviour {
 
-    public List<GameObject> mapBlockArray = new List<GameObject>();
+ public List<GameObject> mapBlockArray = new List<GameObject>();
     public int col = 10;
     public int row = 10;
     public const float MapMovingSpeed = 5;
@@ -52,4 +52,5 @@ public class BattleFieldManager : MonoBehaviour {
         else if (scale < 0.3) scale = 0.3f;
         transform.localScale = new Vector3(scale, scale, 1);
     }
+    
 }
